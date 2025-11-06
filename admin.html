@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Bendle – Admin</title>
+  <style>
+    body {font-family:Arial; padding:20px; background:#111; color:#fff;}
+    textarea {width:100%; height:400px; background:#222; color:#0f0;}
+    button {margin-top:10px; padding:10px;}
+  </style>
+</head>
+<body>
+  <h1>Bendle – Edytor danych</h1>
+  <input type="password" id="pass" placeholder="hasło" />
+  <button id="login">Zaloguj</button>
+  <textarea id="editor" style="display:none;"></textarea>
+  <button id="save" style="display:none;">Zapisz</button>
+
+  <script>
+    const PASS = "bendle2025"; // ZMIEŃ NA SWOJE HASŁO
+    document.getElementById('login').onclick = () => {
+      if (document.getElementById('pass').value === PASS) {
+        document.getElementById('editor').style.display = 'block';
+        document.getElementById('save').style.display = 'block';
+        fetch('data.json').then(r=>r.text()).then(t=>document.getElementById('editor').value = t);
+      }
+    };
+    document.getElementById('save').onclick = () => {
+      const blob = new Blob([document.getElementById('editor').value], {type:'application/json'});
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'data.json';
+      a.click();
+      alert('Pobierz plik i wgraj go na serwer (zastąp stary data.json)');
+    };
+  </script>
+</body>
+</html>
