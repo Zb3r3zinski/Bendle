@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Four Arms",
+    "species": "Tetramand",
+    "planet": "Khoros",
+    "firstAppearance": "Washington B.C.",
+    "image": "https://ben10.fandom.com/wiki/File:Four_Arms.png"
+  },
+  {
+    "name": "Heatblast",
+    "species": "Pyronite",
+    "planet": "Pyros",
+    "firstAppearance": "And Then There Were 10",
+    "image": "https://ben10.fandom.com/wiki/File:Heatblast.png"
+  },
+  {
+    "name": "XLR8",
+    "species": "Kineceleran",
+    "planet": "Kinet",
+    "firstAppearance": "And Then There Were 10",
+    "image": "https://ben10.fandom.com/wiki/File:XLR8.png"
+  },
+  {
+    "name": "Diamondhead",
+    "species": "Petrosapien",
+    "planet": "Petropia",
+    "firstAppearance": "And Then There Were 10",
+    "image": "https://ben10.fandom.com/wiki/File:Diamondhead.png"
+  },
+  {
+    "name": "Upgrade",
+    "species": "Galvanic Mechamorph",
+    "planet": "Galvan B",
+    "firstAppearance": "Permanent Retirement",
+    "image": "https://ben10.fandom.com/wiki/File:Upgrade.png"
+  }
+  // DODAJ KOLEJNE OBCE TU
+]
