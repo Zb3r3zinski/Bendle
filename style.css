@@ -1,0 +1,21 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:Arial,Helvetica,sans-serif; background:#121212; color:#eee; display:flex; justify-content:center; padding:20px; }
+.container { max-width:600px; width:100%; text-align:center; }
+h1 { font-size:3rem; margin-bottom:0.2em; color:#0f0; }
+.subtitle { margin-bottom:1.5rem; color:#aaa; }
+
+#input-row { display:flex; gap:8px; margin-bottom:20px; }
+#guess { flex:1; padding:12px; font-size:1.1rem; border:2px solid #333; border-radius:8px; background:#222; color:#fff; }
+#submit { padding:12px 20px; font-size:1.1rem; background:#0f0; color:#000; border:none; border-radius:8px; cursor:pointer; }
+
+#grid { display:grid; grid-template-columns:repeat(5,1fr); gap:4px; margin-bottom:20px; }
+.cell { aspect-ratio:1; background:#333; display:flex; align-items:center; justify-content:center; font-weight:bold; border-radius:4px; }
+
+.green { background:#6a0; }
+.yellow { background:#cc0; }
+.gray { background:#555; }
+
+#message { margin:20px 0; font-size:1.2rem; min-height:1.5em; }
+
+button { padding:10px 20px; background:#333; color:#fff; border:none; border-radius:8px; cursor:pointer; }
+button:hover { background:#555; }
